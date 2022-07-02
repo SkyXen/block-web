@@ -78,6 +78,11 @@ h1,h2,h3,p,ul{
   margin: 0;
 }
 
+p{
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
 h3{
   color:#069C54
 }
@@ -99,9 +104,8 @@ a{
 
 /*========== LAYOUT ==========*/
 .bd-container{
-  max-width: 1240px;
-  margin-left: var(--mb-2);
-  margin-right: var(--mb-2);
+  max-width: 100%;
+  
 }
 
 .bd-grid{
@@ -114,6 +118,7 @@ a{
   position: fixed;
   top: 0;
   left: 0;
+  
   z-index: var(--z-fixed);
   background-color: var(--nav-color);
 }
@@ -129,8 +134,15 @@ a{
 }
 
 
-.nav__item{
-  margin-bottom: var(--mb-2);
+.nav__item1{
+  margin-bottom: var(--mb-1);
+  margin-right: 2rem;
+}
+
+
+.nav__item2{
+  margin-bottom: var(--mb-1);
+  margin-right: 12rem;
 }
 
 .nav__link, .nav__logo, .nav__toggle{
@@ -142,13 +154,14 @@ a{
   font-size: 2rem;
   font-weight: bold;
 }
+
 .nav__logo:hover{
   color: var(--first-color);
 }
 
 .nav__link{
   transition: .3s;
-  font-size: 2px;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 
@@ -164,9 +177,10 @@ a{
 
 /*========== HOME ==========*/
 .home__container{
-  max-width: 1240px;
+  max-width: 100%;
   height: calc(100vh - var(--header-height));
   align-content: center;
+  margin-left: var(--mb-4);
 }
 
 
@@ -175,12 +189,17 @@ a{
   font-size: var(--biggest-font-size);
   color: var(--first-color);
   margin-bottom: var(--mb-1);
+  margin-left: var(--mb-4);
 }
 
 .home__subtitle{
   font-size: var(--h1-font-size);
   color: white;
   margin-bottom: var(--mb-4);
+}
+
+.home__data{
+  margin-left: var(--mb-6);
 }
 
 .info{
@@ -245,6 +264,7 @@ a{
 .nav__button{
   display: inline-block;
   background-color: var(--first-color);
+  color:#FFF;
   padding: .05rem 3rem;
   border-radius: .5rem;
   transition: .3s;
@@ -284,7 +304,7 @@ a{
   transition: .3s;
   width:90%;
   margin-top: var(--mb-3);
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-3);
 }
 
 
